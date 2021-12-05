@@ -1,0 +1,193 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lobster', cursive;
+}
+
+h1,h2,h3{
+    color: #fff;
+    text-shadow: 1px 2px 3px #808080
+}
+
+p{
+    font-family: 'Shippori Antique', sans-serif;
+    line-height: 30px;
+    letter-spacing: 3px;
+}
+
+body{
+    background-color: #1B1B1B;
+}
+
+// ヘッダー
+header{
+    display: flex;
+    justify-content: space-between;
+    & #title{
+        padding: 10px;
+       }
+       
+    & #navigation{
+        background-color: #fff;
+        padding: 10px;
+        & ul {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            & li {
+                list-style: none;
+                margin-right: 10px;
+                & a{
+                    color: #000;
+                    text-decoration: none;
+                }
+            }
+        } 
+        
+    }
+}
+
+// トップ
+main #main-title{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & #main-title-inner{
+        & img{
+            width: 100%;
+            aspect-ratio:184/77; 
+        }
+        & h1{
+            text-align: center;
+        }
+    }
+}
+
+// HYG紹介
+.home-sec{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 200px;
+    & .home-sec-left-inner ,.home-sec-right-inner{
+        width: 30%;
+        & h3{
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+    & .bg-white{
+        height: 200px;
+        background-color: #fff;
+        padding: 50px;
+        position: relative;
+        box-shadow: 0 0 3px gray;
+    } 
+    & .bg-white-right::after{
+        display: block;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        position: absolute;
+        top:-5%;
+        right:-3%;
+        z-index: -1;
+    }
+    & .bg-white-left::after{
+        display: block;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        position: absolute;
+        bottom:-5%;
+        left:-3%;
+        z-index: -1;
+    }
+}
+
+// チームセクション
+#teams-section{
+    & h1{
+        text-align: center;
+    }
+    & #teams-section-inner{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 100px;
+        & .team-card{
+            cursor: pointer;
+            transition: .3s ease-in-out;
+            &:hover{
+                filter: drop-shadow(0 0 0.75rem #000);
+            }
+        }
+    }
+}
+
+// スポンサーセクション
+#sponsors-section{
+    margin-top: 200px;
+    & h1{
+        text-align: center;
+    }
+    & #sponsors-section-inner{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 100px;
+        & .sponsor-logo{
+            & img{
+                max-width: 100%;
+                vertical-align: bottom;
+            }
+        }
+    }
+}
+
+// フッター
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+// テキストアニメーション
+.fadeUp{
+    animation: fadeUp .9s ease-in-out;
+}
+
+@keyframes fadeUp {
+    0%{
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+// ローディング
+#splash {
+    /*fixedで全面に固定*/
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background:#333;
+  text-align:center;
+  color:#fff;
+}
+
+#splash_text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    z-index: 999;
+	width: 100%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+}

@@ -1,0 +1,247 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lobster', cursive;
+}
+
+h1, h2, h3 {
+  color: #fff;
+  text-shadow: 1px 2px 3px #808080;
+}
+
+p {
+  font-family: 'Shippori Antique', sans-serif;
+  line-height: 30px;
+  letter-spacing: 3px;
+}
+
+body {
+  background-color: #1B1B1B;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header #title {
+  padding: 10px;
+}
+
+header #navigation {
+  background-color: #fff;
+  padding: 10px;
+}
+
+header #navigation ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header #navigation ul li {
+  list-style: none;
+  margin-right: 10px;
+}
+
+header #navigation ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+main #main-title {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #main-title #main-title-inner img {
+  width: 100%;
+  aspect-ratio: 184/77;
+}
+
+main #main-title #main-title-inner h1 {
+  text-align: center;
+}
+
+.home-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 200px;
+}
+
+.home-sec .home-sec-left-inner, .home-sec .home-sec-right-inner {
+  width: 30%;
+}
+
+.home-sec .home-sec-left-inner h3, .home-sec .home-sec-right-inner h3 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.home-sec .bg-white {
+  height: 200px;
+  background-color: #fff;
+  padding: 50px;
+  position: relative;
+  -webkit-box-shadow: 0 0 3px gray;
+          box-shadow: 0 0 3px gray;
+}
+
+.home-sec .bg-white-right::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  top: -5%;
+  right: -3%;
+  z-index: -1;
+}
+
+.home-sec .bg-white-left::after {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  bottom: -5%;
+  left: -3%;
+  z-index: -1;
+}
+
+#teams-section h1 {
+  text-align: center;
+}
+
+#teams-section #teams-section-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 100px;
+}
+
+#teams-section #teams-section-inner .team-card {
+  cursor: pointer;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+#teams-section #teams-section-inner .team-card:hover {
+  -webkit-filter: drop-shadow(0 0 0.75rem #000);
+          filter: drop-shadow(0 0 0.75rem #000);
+}
+
+#sponsors-section {
+  margin-top: 200px;
+}
+
+#sponsors-section h1 {
+  text-align: center;
+}
+
+#sponsors-section #sponsors-section-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 100px;
+}
+
+#sponsors-section #sponsors-section-inner .sponsor-logo img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fadeUp {
+  -webkit-animation: fadeUp .9s ease-in-out;
+          animation: fadeUp .9s ease-in-out;
+}
+
+@-webkit-keyframes fadeUp {
+  0% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#splash {
+  /*fixedで全面に固定*/
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  text-align: center;
+  color: #fff;
+}
+
+#splash_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

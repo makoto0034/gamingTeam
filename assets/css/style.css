@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lobster', cursive;
+}
+
+h1, h2, h3 {
+  color: #fff;
+  text-shadow: 1px 2px 3px #808080;
+}
+
+p {
+  font-family: 'Shippori Antique', sans-serif;
+  line-height: 30px;
+  letter-spacing: 3px;
+}
+
+body {
+  background-image: url(../image/wing-backgroud.jpg);
+  background-repeat: no-repeat;
+  background-color: rgba(27, 27, 27, 0.5);
+  background-blend-mode: darken;
+  background-size: cover;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header #title {
+  padding: 10px;
+}
+
+header #navigation {
+  background-color: #fff;
+  padding: 10px;
+}
+
+header #navigation ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header #navigation ul li {
+  list-style: none;
+  margin-right: 10px;
+}
+
+header #navigation ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */

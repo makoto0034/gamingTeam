@@ -5,34 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Holy Yen Geles</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Shippori+Antique&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="assets/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"></script>
 </head>
 <body>
     <div id="splash">
         <div id="splash_text"></div>
       </div>
-    <header>
-        <div id="title"><h1>HYG</h1></div>
-        <nav id="navigation">
-            <ul>
-                <li><a href="">News</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Teams</a></li>
-                <li><a href="">Sponsors</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+      <div id="header">
+          <script>
+              $(function(){
+                  $('#header').load('_header.html')
+              })
+          </script>
+      </div>
     <main>
-        <div id="main-title">
-            <div id="main-title-inner">
-                <img src="assets/image/angel_white_1.jpg" alt="">
-                <h1>Holy Yen Gegeles</h1>
+        <div id="main-title-container">
+            <div id="main-title-container-inner">
+                <div id="main-title">
+                    <span class="initial-letter">H</span>oly <span class="initial-letter">Y</span>en <span class="initial-letter">G</span>egeles
+                </div>   
             </div>
         </div>
     </main>
@@ -71,23 +68,27 @@
     <div id="teams-section">
         <h1>Our Teams</h1>
         <div id="teams-section-inner">
-            <div class="team-card"><img src="assets/image/valorant-team.png""></div>
-            <div class="team-card"><img src="assets/image/apex-team.png" alt=""></div>
-            <div class="team-card"><img src="assets/image/streamer.png" alt=""></div>
+            <div class="team-card"><img src="assets/image/team/valorant-team.png"></div>
+            <div class="team-card"><img src="assets/image/team/apex-team.png" alt=""></div>
+            <div class="team-card"><img src="assets/image/team/streamer.png" alt=""></div>
         </div>
     </div>
     <div id="sponsors-section">
         <h1>Sponsors</h1>
         <div id="sponsors-section-inner">
-            <div class="sponsor-logo"><img src="assets/image/legion.png" alt=""></div>
-            <div class="sponsor-logo"><img src="assets/image/mildom.png" alt=""></div>
-            <div class="sponsor-logo"><img src="assets/image/amd.png" alt=""></div>
-            <div class="sponsor-logo"><img src="assets/image/ubereats.png" alt=""></div>
+            <div class="sponsor-logo"><img src="assets/image/logo/legion.png" alt=""></div>
+            <div class="sponsor-logo"><img src="assets/image/logo/mildom.png" alt=""></div>
+            <div class="sponsor-logo"><img src="assets/image/logo/amd.png" alt=""></div>
+            <div class="sponsor-logo"><img src="assets/image/logo/ubereats.png" alt=""></div>
         </div>
     </div>
-    <footer>
-        <small>&copy;StartTommorow Inc.</small>
-    </footer>
-    <script type="text/javascript" src="assets/index.js"></script>
+    <script type="text/javascript" src="assets/js/index.js"></script>
+    <div id="footer">
+        <script>
+            $(function(){
+                $('#footer').load('_footer.html');
+            })
+        </script>
+    </div>
 </body>
 </html>

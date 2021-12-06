@@ -1,64 +1,5 @@
 @charset "UTF-8";
-* {
-  padding: 0;
-  margin: 0;
-  font-family: 'Lobster', cursive;
-}
-
-h1, h2, h3 {
-  color: #fff;
-  text-shadow: 1px 2px 3px #808080;
-}
-
-p {
-  font-family: 'Shippori Antique', sans-serif;
-  line-height: 30px;
-  letter-spacing: 3px;
-}
-
-body {
-  background-color: #1B1B1B;
-}
-
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-header #title {
-  padding: 10px;
-}
-
-header #navigation {
-  background-color: #fff;
-  padding: 10px;
-}
-
-header #navigation ul {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header #navigation ul li {
-  list-style: none;
-  margin-right: 10px;
-}
-
-header #navigation ul li a {
-  color: #000;
-  text-decoration: none;
-}
-
-main #main-title {
+main #main-title-container {
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -72,13 +13,13 @@ main #main-title {
           align-items: center;
 }
 
-main #main-title #main-title-inner img {
-  width: 100%;
-  aspect-ratio: 184/77;
+main #main-title-container #main-title-container-inner #main-title {
+  font-size: 100px;
+  color: #6d6d6d;
 }
 
-main #main-title #main-title-inner h1 {
-  text-align: center;
+main #main-title-container #main-title-container-inner #main-title .initial-letter {
+  color: #fff;
 }
 
 .home-sec {
@@ -155,8 +96,8 @@ main #main-title #main-title-inner h1 {
 }
 
 #teams-section #teams-section-inner .team-card:hover {
-  -webkit-filter: drop-shadow(0 0 0.75rem #000);
-          filter: drop-shadow(0 0 0.75rem #000);
+  -webkit-filter: drop-shadow(0 0 0.95rem #000);
+          filter: drop-shadow(0 0 0.95rem #000);
 }
 
 #sponsors-section {
@@ -181,15 +122,6 @@ main #main-title #main-title-inner h1 {
 #sponsors-section #sponsors-section-inner .sponsor-logo img {
   max-width: 100%;
   vertical-align: bottom;
-}
-
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .fadeUp {
@@ -244,4 +176,4 @@ footer {
           transform: translate(-50%, -50%);
   color: #fff;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=index.css.map */
